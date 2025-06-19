@@ -83,7 +83,7 @@ public function getAllZones()
         $zones[] = $zone;
     }
 
-    echo json_encode([$zones]);
+    echo json_encode($zones);
     exit;
 }
 
