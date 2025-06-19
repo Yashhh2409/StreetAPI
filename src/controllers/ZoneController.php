@@ -83,11 +83,7 @@ public function getAllZones()
         $zones[] = $zone;
     }
 
-    echo json_encode([
-        "status" => true,
-        "count" => count($zones),
-        "data" => $zones
-    ]);
+    echo json_encode([$zones]);
     exit;
 }
 
