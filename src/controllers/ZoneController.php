@@ -139,14 +139,7 @@ public function getAllZones()
     // Use point-in-polygon algorithm
     $inside = $this->pointInPolygon($lat, $lng, $polygon);
 
-    echo json_encode([
-        "status" => true,
-        "in_zone" => $inside,
-        "point" => ["lat" => $lat, "lng" => $lng],
-        // "polygon_count" => count($polygon),
-        // "first_polygon_point" => $polygon[0],
-        // "last_polygon_point" => end($polygon)
-    ]);
+    echo json_encode($inside);
     exit;
 }
 
