@@ -8,12 +8,12 @@ $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $zoneController = new ZoneController();
 
 // Match and exit immediately if matched
-if ($method === 'GET' && $uri === '/zone/list') {
+if ($method === 'GET' && $uri === '/api/v1/zone/list') {
     $zoneController->getAllZones();
     exit;
 }
 
-if ($method === 'GET' && $uri === '/zone/check') {
+if ($method === 'GET' && $uri === '/api/v1/zone/check') {
     $zoneController->zonesCheck();
     exit;
 }
