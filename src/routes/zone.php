@@ -17,6 +17,3 @@ if ($method === 'GET' && $uri === '/api/v1/zone/check') {
     $zoneController->zonesCheck();
     exit;
 }
-
-http_response_code(404);
-echo json_encode(["status" => false, "message" => "Route not found"]);
