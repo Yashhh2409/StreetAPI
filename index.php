@@ -10,6 +10,8 @@ require_once __DIR__ . '/src/routes/home.php';
 require_once __DIR__ . '/src/routes/zone.php';
 require_once __DIR__ . '/src/routes/config.php';
 require_once __DIR__ . '/src/routes/ExternalConfiguration.php';
+require_once __DIR__ . '/src/routes/subscription.php';
+require_once __DIR__ . '/src/routes/banner.php';
 
 
 $output = ob_get_clean();
